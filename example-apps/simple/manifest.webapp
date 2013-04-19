@@ -1,0 +1,8 @@
+{
+  "name": "Simple",
+  "description": "A simple web app",
+  "launch_path": "/index.html",
+  "icons": {
+    "128": "/style/icons/Blank.png"
+  }
+}
