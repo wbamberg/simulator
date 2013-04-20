@@ -20,6 +20,7 @@ function resetMap() {
 }
 
 function getMap(position) {
+  resetMap();
 
   var options={
     elt:document.getElementById('map'),
