@@ -8,7 +8,6 @@ function error(error) {
   console.log("navigator.geolocation.getCurrentPosition returned an error: code = " + error.code + " : " + error.message);
 }
 
-
 function getMap(position) {
   if (window.map) {
     window.map.dispose();
