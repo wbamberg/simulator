@@ -1,26 +1,18 @@
 var whereami = document.getElementById('where-am-i');
-var reset = document.getElementById('reset');
 
 whereami.onclick = function() {
   navigator.geolocation.getCurrentPosition(getMap, error);
 };
 
-reset.onclick = function() {
-  resetMap();
-};
-
 function error(error) {
-  console.log(error.code + " : " + error.message);
+  console.log("navigator.geolocation.getCurrentPosition returned an error: code = " + error.code + " : " + error.message);
 }
 
-function resetMap() {
+
+function getMap(position) {
   if (window.map) {
     window.map.dispose();
   }
-}
-
-function getMap(position) {
-  resetMap();
 
   var options={
     elt:document.getElementById('map'),
